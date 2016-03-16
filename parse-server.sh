@@ -13,4 +13,4 @@ export PARSE_DASHBOARD_ALLOW_INSECURE_HTTP=1
 
 mongod --dbpath /db & 
 parse-server & 
-cd parse-dashboard && npm run dashboard
+cd parse-dashboard && npm run start
