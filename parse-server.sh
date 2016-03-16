@@ -11,4 +11,4 @@ echo '{
 
 mongod --dbpath /db & 
 parse-server & 
-cd parse-dashboard && npm start
+cd parse-dashboard && npm dashboard
