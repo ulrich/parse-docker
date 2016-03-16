@@ -13,7 +13,7 @@ echo '{
       "pass":"pass"
     }
   ]
-}' > config.json
+}' > parse-dashboard/config.json
 
 mongod --dbpath /db & 
 parse-server & 
