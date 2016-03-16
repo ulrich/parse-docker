@@ -6,6 +6,12 @@ echo '{
       "masterKey": "$PARSE_SERVER_MASTER_KEY",
       "appName": "MyApp"
     }
+  ],
+  "users": [
+    {
+      "user":"user",
+      "pass":"pass"
+    }
   ]
 }' > ../parse-dashboard/Parse-Dashboard/parse-dashboard-config.json
 
