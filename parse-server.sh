@@ -10,4 +10,4 @@ echo '{
 }' > ../parse-dashboard/parse-dashboard-config.json
 
 mongod --dbpath /db && parse-server
-cd parse-docker && npm run dashboard
+cd parse-dashboard && npm run dashboard
