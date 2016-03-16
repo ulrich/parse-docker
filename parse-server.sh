@@ -9,5 +9,5 @@ echo '{
   ]
 }' > ../parse-dashboard/parse-dashboard-config.json
 
-service mongod start && parse-server
+mongod --dbpath /db && parse-server
 cd parse-docker && npm run dashboard
