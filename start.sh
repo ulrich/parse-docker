@@ -13,10 +13,8 @@ echo '{
       "pass":"pass"
     }
   ]
-}' > ../parse-dashboard/Parse-Dashboard/parse-dashboard-config.json
-
-export PARSE_DASHBOARD_ALLOW_INSECURE_HTTP=1
+}' > config.json
 
 mongod --dbpath /db & 
 parse-server & 
-cd parse-dashboard && npm run dashboard
+cd parse-dashboard && npm start -- --config config.json --port 4040 --allowInsecureHTTP=1
