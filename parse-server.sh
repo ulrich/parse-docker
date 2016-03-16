@@ -7,7 +7,9 @@ echo '{
       "appName": "MyApp"
     }
   ]
-}' > ../parse-dashboard/parse-dashboard-config.json
+}' > ../parse-dashboard/Parse-Dashboard/parse-dashboard-config.json
+
+mkdir /db
 
 mongod --dbpath /db && parse-server
 cd parse-dashboard && npm start
