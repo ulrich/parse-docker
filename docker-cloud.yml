@@ -1,0 +1,10 @@
+parse:
+  image: 'didierfranc/parse-docker:latest'
+  environment:
+    - PARSE_DASH_PASS=password
+    - PARSE_DASH_USER=username
+    - PARSE_SERVER_APPLICATION_ID=1111
+    - PARSE_SERVER_MASTER_KEY=1111
+  ports:
+    - '1337:1337'
+    - '4040:4040'
