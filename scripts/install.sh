@@ -11,6 +11,4 @@ apt-get install -y nodejs
 npm install -g parse-server
 
 # Parse-Dashboard
-git clone https://github.com/ParsePlatform/parse-dashboard.git
-cd parse-dashboard && npm install
-npm run prepublish
+npm install -g parse-dashboard
