@@ -1,4 +1,4 @@
-if [ -n $DOCKERCLOUD_NODE_FQDN ]
+if [ -z $DOCKERCLOUD_NODE_FQDN ]
 then
   ip=$DOCKERCLOUD_NODE_FQDN
 else
