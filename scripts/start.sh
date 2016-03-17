@@ -11,8 +11,8 @@ config='{
   ],
   "users": [
     {
-      "user":"user",
-      "pass":"pass"
+      "user":"dashuser",
+      "pass":"dashpass"
     }
   ]
 }'
@@ -20,6 +20,8 @@ config='{
 config=${config/ip/$ip}
 config=${config/id/$PARSE_SERVER_APPLICATION_ID}
 config=${config/key/$PARSE_SERVER_MASTER_KEY}
+config=${config/dashuser/$PARSE_DASH_USER}
+config=${config/dashpass/$PARSE_DASH_PASS}
 
 echo $config > parse-dashboard/config.json
 
