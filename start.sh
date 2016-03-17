@@ -17,11 +17,11 @@ config='{
   ]
 }'
 
-config=${config/ip/$ip}
-config=${config/id/$PARSE_SERVER_APPLICATION_ID}
-config=${config/key/$PARSE_SERVER_MASTER_KEY}
+a=${config/ip/$ip}
+b=${config/id/$PARSE_SERVER_APPLICATION_ID}
+c=${config/key/$PARSE_SERVER_MASTER_KEY}
 
-echo $config > parse-dashboard/config.json
+echo $c > parse-dashboard/config.json
 
 mongod --dbpath /db & 
 parse-server & 
