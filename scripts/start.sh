@@ -1,7 +1,14 @@
+IP=`dig +short myip.opendns.com @resolver1.opendns.com`
+
+if [ -n $DOCKERCLOUD_NODE_FQDN ]
+then
+  IP=$DOCKERCLOUD_NODE_FQDN
+fi
+
 config='{
   "apps": [
     {
-      "serverURL": "http://adress:1337/parse",
+      "serverURL": "http://ip:1337/parse",
       "appId": "id",
       "masterKey": "key",
       "appName": "MyApp"
@@ -15,14 +22,7 @@ config='{
   ]
 }'
 
-if [ -z $DOCKERCLOUD_NODE_FQDN ]
-then
-  IP=`dig +short myip.opendns.com @resolver1.opendns.com`
-else
-  ADRESS=$DOCKERCLOUD_NODE_FQDN
-fi
-
-config=${config/adress/$ADRESS$IP}
+config=${config/ip/$IP}
 config=${config/id/$PARSE_SERVER_APPLICATION_ID}
 config=${config/key/$PARSE_SERVER_MASTER_KEY}
 config=${config/dashuser/$PARSE_DASH_USER}
