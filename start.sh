@@ -18,8 +18,8 @@ config='{
 }'
 
 a=${config/ip/$ip}
-b=${config/id/$PARSE_SERVER_APPLICATION_ID}
-c=${config/key/$PARSE_SERVER_MASTER_KEY}
+b=${a/id/$PARSE_SERVER_APPLICATION_ID}
+c=${b/key/$PARSE_SERVER_MASTER_KEY}
 
 echo $c > parse-dashboard/config.json
 
