@@ -1,4 +1,9 @@
-ip=`dig +short myip.opendns.com @resolver1.opendns.com`
+if [ -z $DOCKERCLOUD_NODE_FQDN ]
+then
+  ip=$DOCKERCLOUD_NODE_FQDN
+else
+  ip=`dig +short myip.opendns.com @resolver1.opendns.com`
+fi
 
 config='{
   "apps": [
