@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM debian:latest
 MAINTAINER Didier Franc <contact@didierfranc.com>
 
 COPY /scripts /
