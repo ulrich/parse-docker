@@ -7,7 +7,7 @@ Deploy instantly to Docker Cloud :
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
 
 
-Build MongoDB + [Parse-Server](https://github.com/ParsePlatform/parse-server/) + [Parse-Dashboard](https://github.com/ParsePlatform/parse-dashboard/) with one line :
+Build image with MongoDB + [Parse-Server](https://github.com/ParsePlatform/parse-server/) + [Parse-Dashboard](https://github.com/ParsePlatform/parse-dashboard/) with one line :
 ```
 docker build github.com/didierfranc/parse-docker
 ```
