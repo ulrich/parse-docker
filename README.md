@@ -15,7 +15,7 @@ docker build github.com/didierfranc/parse-docker
 Use Automated Build from Docker Hub :
 
 ```
-docker run -e PARSE_SERVER_APPLICATION_ID='appId'\
+docker run -e PARSE_SERVER_APPLICATION_ID='appId' \
            -e PARSE_SERVER_MASTER_KEY='masterKey' \
            -e PARSE_DASH_USER='dashboardUsername' \
            -e PARSE_DASH_PASS='dashboardPassword' \
