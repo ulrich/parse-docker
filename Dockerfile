@@ -1,6 +1,6 @@
 FROM debian:latest
 MAINTAINER Didier Franc <contact@didierfranc.com>
 
-COPY /script /
+COPY /scripts /
 RUN sh install.sh
 CMD ["bash","start.sh"]
