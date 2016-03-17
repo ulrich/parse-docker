@@ -8,3 +8,6 @@ parse:
   ports:
     - '1337:1337'
     - '4040:4040'
+  volumes:
+    - /db:/db
+    - /cloud:/cloud
