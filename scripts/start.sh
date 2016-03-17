@@ -28,6 +28,7 @@ config=${config/key/$PARSE_SERVER_MASTER_KEY}
 config=${config/dashuser/$PARSE_DASH_USER}
 config=${config/dashpass/$PARSE_DASH_PASS}
 
+echo $config
 echo $config > config.json
 
 mongod --dbpath /db & 
