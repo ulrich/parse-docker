@@ -3,7 +3,7 @@ apt-get update && apt-get install -y curl
 
 # NodeJS
 curl -sL https://deb.nodesource.com/setup_4.x | bash -
-sudo apt-get install -y nodejs
+apt-get install -y nodejs
 
 # MongoDB
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
