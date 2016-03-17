@@ -1,4 +1,4 @@
-FROM node:latest
+FROM debian:latest
 MAINTAINER Didier Franc <contact@didierfranc.com>
 
 RUN git clone https://github.com/didierfranc/parse-docker.git
