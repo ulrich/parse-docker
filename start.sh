@@ -1,25 +1,9 @@
-echo '{
-  "apps": [
-    {
-      "serverURL": "http://localhost:1337/parse",
-      "appId": "$PARSE_SERVER_APPLICATION_ID",
-      "masterKey": "$PARSE_SERVER_MASTER_KEY",
-      "appName": "MyApp"
-    }
-  ],
-  "users": [
-    {
-      "user":"user",
-      "pass":"pass"
-    }
-  ]
-}'
-
+ip = `dig +short myip.opendns.com @resolver1.opendns.com`
 
 echo '{
   "apps": [
     {
-      "serverURL": "http://localhost:1337/parse",
+      "serverURL": "http://$ip:1337/parse",
       "appId": "$PARSE_SERVER_APPLICATION_ID",
       "masterKey": "$PARSE_SERVER_MASTER_KEY",
       "appName": "MyApp"
