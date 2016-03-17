@@ -1,10 +1,3 @@
-if [ -z $DOCKERCLOUD_NODE_FQDN ]
-then
-  ADRESS=`dig +short myip.opendns.com @resolver1.opendns.com`
-else
-  ADRESS=$DOCKERCLOUD_NODE_FQDN
-fi
-
 config='{
   "apps": [
     {
@@ -22,7 +15,12 @@ config='{
   ]
 }'
 
-echo $ADRESS
+if [ -z $DOCKERCLOUD_NODE_FQDN ]
+then
+  ADRESS=`dig +short myip.opendns.com @resolver1.opendns.com`
+else
+  ADRESS=$DOCKERCLOUD_NODE_FQDN
+fi
 
 config=${config/adress/$ADRESS}
 config=${config/id/$PARSE_SERVER_APPLICATION_ID}
@@ -30,6 +28,7 @@ config=${config/key/$PARSE_SERVER_MASTER_KEY}
 config=${config/dashuser/$PARSE_DASH_USER}
 config=${config/dashpass/$PARSE_DASH_PASS}
 
+echo $config
 echo $config > config.json
 
 mongod --dbpath /db & 
