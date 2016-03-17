@@ -1,11 +1,11 @@
-ip = `dig +short myip.opendns.com @resolver1.opendns.com`
+ip=`dig +short myip.opendns.com @resolver1.opendns.com`
 
-echo "{
+config='{
   "apps": [
     {
-      "serverURL": "http://$ip:1337/parse",
-      "appId": "$PARSE_SERVER_APPLICATION_ID",
-      "masterKey": "$PARSE_SERVER_MASTER_KEY",
+      "serverURL": "http://ip:1337/parse",
+      "appId": "id",
+      "masterKey": "key",
       "appName": "MyApp"
     }
   ],
@@ -15,7 +15,13 @@ echo "{
       "pass":"pass"
     }
   ]
-}" > parse-dashboard/config.json
+}'
+
+config=${config/ip/$ip}
+config=${config/id/$PARSE_SERVER_APPLICATION_ID}
+config=${config/key/$PARSE_SERVER_MASTER_KEY}
+
+echo config > parse-dashboard/config.json
 
 mongod --dbpath /db & 
 parse-server & 
