@@ -26,7 +26,9 @@ docker run -e PARSE_SERVER_APPLICATION_ID='appId' \
 
 ## Versions
   
-#### parse-server [![npm version](https://img.shields.io/npm/v/parse-server.svg?style=flat)](https://www.npmjs.com/package/parse-server)  
+#### parse-server 
+[![npm version](https://img.shields.io/npm/v/parse-server.svg?style=flat)](https://www.npmjs.com/package/parse-server)  
   
-#### parse-dashboard [![npm version](https://img.shields.io/npm/v/parse-dashboard.svg?style=flat)](https://www.npmjs.com/package/parse-dashboard)  
+#### parse-dashboard 
+[![npm version](https://img.shields.io/npm/v/parse-dashboard.svg?style=flat)](https://www.npmjs.com/package/parse-dashboard)  
 
