@@ -1,8 +1,8 @@
-if [ -z $DOCKERCLOUD_NODE_FQDN ]
+if [ -z $DOCKERCLOUD_SERVICE_FQDN ]
 then
   IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 else
-  IP=$DOCKERCLOUD_NODE_FQDN
+  IP=$DOCKERCLOUD_SERVICE_FQDN
 fi
 
 config='{
