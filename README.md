@@ -23,3 +23,12 @@ docker run -e PARSE_SERVER_APPLICATION_ID='appId' \
            -p 4040:4040 \
            didierfranc/parse-docker
 ```
+
+## Version
+
+NodeJs                5.x  
+MongoDB               3.2  
+  
+parse-server &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![npm version](https://img.shields.io/npm/v/parse-server.svg?style=flat)](https://www.npmjs.com/package/parse-server)  
+parse-dashboard &nbsp; [![npm version](https://img.shields.io/npm/v/parse-dashboard.svg?style=flat)](https://www.npmjs.com/package/parse-dashboard)  
+
