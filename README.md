@@ -31,3 +31,7 @@ docker run -e PARSE_SERVER_APPLICATION_ID='appId' \
   
 #### parse-dashboard 
 [![npm version](https://img.shields.io/npm/v/parse-dashboard.svg?style=flat)](https://www.npmjs.com/package/parse-dashboard)
+
+### Last Build
+
+**29/03/2016***
