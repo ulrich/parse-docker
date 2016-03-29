@@ -34,4 +34,4 @@ docker run -e PARSE_SERVER_APPLICATION_ID='appId' \
 
 ### Last Build
 
-**29/03/2016***
+**29/03/2016**
