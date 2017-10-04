@@ -1,4 +1,4 @@
-if [ -z $DOCKERCLOUD_SERVICE_FQDN ]
+1if [ -z $DOCKERCLOUD_SERVICE_FQDN ]
 then
   IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 else

@@ -1,0 +1,11 @@
+{
+  "appId": "parse",
+  "masterKey": "parsekey",
+  "databaseURI": "mongodb://mongodb:27017/dev",
+  "push": {
+    "android": {
+      "senderId": "85156368675",
+      "apiKey": "AIzaSyCKXkUlu4MxCQThh1x9YjXNNQTZXa5Gzw8"
+    }
+  }
+}

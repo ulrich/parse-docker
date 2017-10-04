@@ -1,0 +1,36 @@
+version: '2'
+
+services:
+  mongodb:
+    hostname: mongodb
+    image: mappy/parse-server-mongodb:latest
+    build:
+      context: ./parse-server-mongodb/
+    ports:
+     - 27017:27017
+    volumes:
+     - "/db"
+
+  parse-server:
+    hostname: parse-server
+    image: mappy/parse-server:latest
+    build:
+      context: ./parse-server/
+    ports:
+     - 1337:1337
+    links:
+      - mongodb
+    depends_on:
+     - mongodb
+
+  parse-dashboard:
+    hostname: parse-dashboard
+    image: mappy/parse-dashboard:latest
+    build:
+      context: ./parse-server-dashboard/
+    ports:
+     - 4040:4040
+    links:
+      - parse-server
+    depends_on:
+     - parse-server

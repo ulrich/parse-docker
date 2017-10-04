@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "serverURL": "http://10.92.70.115:1337/parse",
+      "appId": "parse",
+      "masterKey": "parsekey",
+      "appName": "MyApp"
+    }
+  ],
+  "users": [
+    {
+      "user": "boss",
+      "pass": "roxx"
+    }
+  ]
+}
