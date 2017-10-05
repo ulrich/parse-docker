@@ -4,8 +4,8 @@
   "databaseURI": "mongodb://mongodb:27017/dev",
   "push": {
     "android": {
-      "senderId": "85156368675",
-      "apiKey": "AIzaSyCKXkUlu4MxCQThh1x9YjXNNQTZXa5Gzw8"
+      "senderId": "SENDER_ID",
+      "apiKey": "API_SERVER_KEY"
     }
   }
 }

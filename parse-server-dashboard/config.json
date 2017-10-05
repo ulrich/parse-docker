@@ -1,16 +1,16 @@
 {
   "apps": [
     {
-      "serverURL": "http://10.92.70.115:1337/parse",
-      "appId": "parse",
-      "masterKey": "parsekey",
-      "appName": "MyApp"
+      "serverURL": "http://DASHBOARD_HOSTNAME:1337/parse",
+      "appId": "APP_ID",
+      "masterKey": "MASTER_KEY",
+      "appName": "APP_NAME"
     }
   ],
   "users": [
     {
-      "user": "boss",
-      "pass": "roxx"
+      "user": "USER",
+      "pass": "PASS"
     }
   ]
 }
