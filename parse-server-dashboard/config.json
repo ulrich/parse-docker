@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "serverURL": "http://DASHBOARD_HOSTNAME:1337/parse",
+      "serverURL": "http://localhost:1337/parse",
       "appId": "APP_ID",
       "masterKey": "MASTER_KEY",
       "appName": "APP_NAME"
