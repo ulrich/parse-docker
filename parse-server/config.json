@@ -1,6 +1,6 @@
 {
-  "appId": "parse",
-  "masterKey": "parsekey",
+  "appId": "APP_ID",
+  "masterKey": "MASTER_KEY",
   "databaseURI": "mongodb://mongodb:27017/dev",
   "push": {
     "android": {
